@@ -12,6 +12,7 @@ public class Repositorio
 		{
 			System.out.println("Menú");
 			System.out.println("1-Sumar");
+			System.out.println("2-Restar");
 			System.out.println("0-Salir");
 			opcion = teclado.nextInt();
 			switch(opcion)
@@ -22,11 +23,19 @@ public class Repositorio
 			case 1:
 				sumar();
 				break;
+			case 2:
+				restar();
+				break;
 			default:
 				System.out.println("Opción incorrecta");
 			}
 		}while(opcion!=0);
 		teclado.close();
+	}
+
+	private static void restar()
+	{
+		System.out.println("Has elegido la resta");
 	}
 
 	private static void sumar()
